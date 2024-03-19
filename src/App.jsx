@@ -9,10 +9,8 @@ function App() {
  
   return (
     <div>
-      <div className="min-h-screen p-12 bg-slate-300">
-      <h1>Hello from main page!</h1>
+      <div className="min-h-screen p-12 bg-slate-100">
       <Navbar/>
-
       <Routes>
                 <Route 
           path='/'
