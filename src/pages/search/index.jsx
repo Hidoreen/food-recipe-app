@@ -8,7 +8,7 @@ const Search = () => {
   if(loading) return <div>Loading, please wait...</div>
 
   return(
-    <div className="py-8 container mx-auto grid grid-cols-3 gap-8">
+    <div className="p-8 container mx-auto grid sm:grid-cols-1 sm:items-center md:grid-cols-2  lg:grid-cols-4 xl:grid-cols-5 sm:gap-4 lg:gap-8 w-full">
       {
         recipeList && recipeList.length > 0 ? 
         recipeList.map((item) => <RecipeItem key={item.id} item={item} />)

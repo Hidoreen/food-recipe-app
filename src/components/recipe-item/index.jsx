@@ -1,16 +1,15 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import Details from "../../pages/details";
 
 export default function RecipeItem({ item }) {
   return (
-    <div className="shadow-xl w-80">
-      <div className="h-60 overflow-hidden p-5 flex items-center" key={item.id}>
-        <img src={item.image_url} alt="item photo" className="block w-full" />
-        <div className="mt-2 text-center bloc">
-          <h3 className="text-lg font-semibold">{item?.title}</h3>
-          <span className="text-sm text-gray-500">{item?.publisher}</span>
-          <Link to="#">Recipe Details</Link>
+    <div className="shadow-xl w-80 rounded-lg">
+      <div className=" overflow-hidden p-5 flex flex-col items-center rounded-md" key={item.id}>
+        <img src={item.image_url} alt="item photo" className="block w-full object-contain h-60 " />
+        <div className="mt-2 text-center block">
+        <span className="text-sm text-gray-500 mb-5">Publisher: {item?.publisher}</span> <hr></hr>
+          <h3 className="text-lg font-semibold">{item?.title}</h3> <br></br>
+          <Link to={`/details/${item.id}`} className="text-blue-500">Recipe Details</Link>
         </div>
       </div>
     </div>

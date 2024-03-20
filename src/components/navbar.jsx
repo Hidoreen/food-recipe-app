@@ -11,7 +11,7 @@ const Navbar = () => {
 
 
   return (
-   <nav className="flex justify-between items-center py-4 px-8 container mx-auto flex-col lg:flex-row  gap-5 lg:gap-0 border border-slate-950 rounded">
+   <nav className="flex justify-between items-center py-4 px-8 container mx-auto flex-col lg:flex-row  gap-5 lg:gap-0 rounded">
     <h2 className="text-2xl font-semibold">
       <NavLink to={'/'}>Food Recipe</NavLink>
     </h2>
