@@ -12,7 +12,7 @@ const Search = () => {
       {
         recipeList && recipeList.length > 0 ? 
         recipeList.map((item) => <RecipeItem key={item.id} item={item} />)
-        :<div className="bg-rose-300 col-span-4 px-6 py-6"> <p className="lg:text-2xl font-bold md:whitespace-nowrap sm:whitespace-wrap">Nothing to show, please search something...</p></div>
+        :<div className="bg-rose-200 col-span-4 px-6 py-6"> <p className="lg:text-2xl font-bold md:whitespace-nowrap sm:whitespace-wrap">Nothing to show, please search something...</p></div>
       }
     </div>
   )
