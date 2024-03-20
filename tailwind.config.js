@@ -6,15 +6,15 @@ export default {
   ],
   theme: {
     extend: {},
-    // screens: {
-    //   'phone': '480px',
+    screens: {
+      'sm': '480px',
       
-    //   'tablet': '640px',
+      'md': '640px',
 
-    //   'laptop': '1024px',
+      'lg': '1280px',
 
-    //   'desktop': '1280px',
-    // },
+      'xl': '1536px',
+    },
   },
   plugins: [],
 }
